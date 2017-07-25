@@ -53,6 +53,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            data.remove(at: indexPath.row)
+            NSKeyedArchiver.archiveRootObject(data, toFile: filePath)
+            
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
     
     @IBAction func addStudents(_ sender: Any) {
         let alert = UIAlertController(title: "Add new student", message: "Enter student's name", preferredStyle: .alert)
