@@ -19,6 +19,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         loadData()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        loadData()
+        myTableView.reloadData()
+    }
+    
     var filePath: String {
         let manager = FileManager.default
         let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first

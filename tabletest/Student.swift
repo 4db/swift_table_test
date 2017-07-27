@@ -11,14 +11,14 @@ import Foundation
 class Student: NSObject, NSCoding {
     
     struct Keys {
-        static let Name = "name";
-        static let LastName = "lastName";
+        static let Name = "name"
+        static let LastName = "lastName"
     }
     
     var s = Keys();
     
-    private var _name = "";
-    private var _lastName = "";
+    private var _name = ""
+    private var _lastName = ""
     
     override init() {}
     
@@ -57,7 +57,7 @@ class Student: NSObject, NSCoding {
             return _lastName;
         }
         set {
-            _name = newValue;
+            _lastName = newValue;
         }
     }
 }
