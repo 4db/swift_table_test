@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED0E7AD61F29F31800EC4217 /* EditDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0E7AD51F29F31800EC4217 /* EditDataVC.swift */; };
 		ED5C11911F26F481006C911A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C11901F26F481006C911A /* AppDelegate.swift */; };
 		ED5C11931F26F481006C911A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5C11921F26F481006C911A /* ViewController.swift */; };
 		ED5C11961F26F481006C911A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5C11941F26F481006C911A /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED0E7AD51F29F31800EC4217 /* EditDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDataVC.swift; sourceTree = "<group>"; };
 		ED5C118D1F26F481006C911A /* tabletest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabletest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5C11901F26F481006C911A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED5C11921F26F481006C911A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				ED5C11991F26F481006C911A /* LaunchScreen.storyboard */,
 				ED5C119C1F26F481006C911A /* Info.plist */,
 				ED5C11BE1F270427006C911A /* Student.swift */,
+				ED0E7AD51F29F31800EC4217 /* EditDataVC.swift */,
 			);
 			path = tabletest;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED0E7AD61F29F31800EC4217 /* EditDataVC.swift in Sources */,
 				ED5C11931F26F481006C911A /* ViewController.swift in Sources */,
 				ED5C11BF1F270427006C911A /* Student.swift in Sources */,
 				ED5C11911F26F481006C911A /* AppDelegate.swift in Sources */,
@@ -509,6 +513,7 @@
 				ED5C11B71F26F481006C911A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED5C11B81F26F481006C911A /* Build configuration list for PBXNativeTarget "tabletestTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				ED5C11BA1F26F481006C911A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED5C11BB1F26F481006C911A /* Build configuration list for PBXNativeTarget "tabletestUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +531,7 @@
 				ED5C11BD1F26F481006C911A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

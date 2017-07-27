@@ -89,7 +89,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         alert.addAction(save)
         alert.addAction(cancel)
         
-        self.present(alert, animated: true, completion: nil)
+        self.present(alert, animated: false, completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "EditSegue", sender: tableView.indexPathForSelectedRow!.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? EditDataVC {
+            if let index = sender as? Int {
+                destination.name = data[index].Name
+            }
+        }
     }
 
 
