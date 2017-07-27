@@ -99,7 +99,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? EditDataVC {
             if let index = sender as? Int {
-                destination.name = data[index].Name
+                destination.index = index
+                destination.data = data
+                destination.path = filePath
             }
         }
     }
